@@ -1,0 +1,37 @@
+/* stylelint-disable */
+:root {
+  --primaryColor: #069255;
+  --dangerColor: #da4838;
+  --grayColor: #e0e0e0;
+}
+
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap';
+@import './libs/tailwind';
+@import './libs/antd';
+@import './common/general';
+
+.ant-modal {
+  .ant-modal-content {
+    .ant-modal-close {
+      left: 0;
+      right: unset;
+      color: #fff;
+
+      .ant-modal-close-x {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .ant-modal-header {
+      background-color: var(--primaryColor);
+
+      .ant-modal-title {
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+}
